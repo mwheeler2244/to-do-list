@@ -1,0 +1,76 @@
+body {
+    font-family: 'Cardo', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+
+}
+main{
+    margin-inline: auto;
+    max-width: 800px;
+   
+}
+.users-input{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 4px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#input-task {
+    min-width: 500px;
+    margin-inline: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+#input-task:focus{
+    outline: 1px solid green    ;
+}
+#btn {
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #4cae4c;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px){
+    #input-task{
+        min-width: 0;
+    }
+}
